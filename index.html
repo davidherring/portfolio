@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Herring | Software Engineer</title>
+  <meta name="description" content="Personal software engineering portfolio for David Herring.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="intro" aria-labelledby="site-title">
+      <div class="intro__topline">
+        <h1 id="site-title">David Herring</h1>
+        <div class="links" aria-label="Primary links">
+          <a href="https://github.com/davidherring" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="/assets/resume.pdf">Resume</a>
+          <a href="https://www.linkedin.com/in/david-herring-dev/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <p class="subtitle">Software Engineer | Full-Stack &amp; AI Applications</p>
+
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+        <p class="bio">
+          I came to software engineering through a love of literature and geography. I wanted a tool that would let
+          readers place locations from books onto maps of the real world, so I tried to build it.
+        </p>
+        <button class="text-button" type="button" aria-expanded="false" aria-controls="about-more"
+          data-expand-target="about-more">
+          [ Read more... ]
+        </button>
+        <div class="more" id="about-more" hidden>
+          <p>
+            The first time I wrote code that displayed a carousel of images next to a pin on a map, my focus shifted. I
+            took over a floundering computer science program at the college preparatory high school where I had been
+            teaching literature and rebuilt it into a successful program. And, when I wanted more, I moved to the
+            University of Arizona, to pursue a BS in Computer Science while working full time.
+          </p>
+          <p>
+            Returning to undergraduate studies after 20+ years leading classrooms has been a gift I had not expected at
+            this stage in my life. It has given me an opportunity to sink into deep technical ideas-operating systems,
+            networking, algorithms, and distributed programming-while experimenting with the AI tools that are rapidly
+            changing how software is written. And I love the challenge.
+          </p>
+          <p>
+            I've spent most of my career trying to answer the same question, first in a classroom and now in code: how
+            do you make something understandable without diminishing its complexity? What I've been after, in both jobs,
+            is the version that respects how complicated the thing actually is and still meets someone where they are.
+          </p>
+          <button class="text-button" type="button" aria-expanded="false" aria-controls="about-more"
+            data-collapse-target="about-more">
+            [ Read less... ]
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <section class="project" aria-labelledby="mercury-title">
+      <div class="project__heading">
+        <h2 id="mercury-title">Mercury Game</h2>
+        <p>React | TypeScript | FastAPI | Supabase | OpenAI API | Render | Netlify</p>
+      </div>
+
+      <div class="feature">
+        <div class="screenshot" role="img" aria-label="Mercury Game screenshot">
+          <img src="assets/mercury_game_ss1.png" alt="Mercury Game interface">
+        </div>
+
+        <div class="feature__copy">
+          <p>
+            Negotiation simulation where a human plays alongside eight AI representatives for countries and NGOs debate
+            mercury pollution policies.
+          </p>
+          <p>
+            Built as a full-stack application combining deterministic game logic with LLM-generated player outputs.
+          </p>
+          <div class="actions" aria-label="Mercury Game project links">
+            <a href="https://mercury-game.netlify.app/" target="_blank" rel="noreferrer">Mercury Game</a>
+            <a href="https://www.linkedin.com/in/david-herring-dev/" target="_blank" rel="noreferrer">Request Access via
+              LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="videos" aria-label="Mercury Game video entries">
+        <article class="video">
+          <div class="video__thumb" aria-hidden="true"></div>
+          <p class="video__title">The Mercury Game: What and Why?</p>
+          <p class="video__meta">02:30 | Overview</p>
+          <p>What is the Mercury Game? Why was it built and who is it for?</p>
+        </article>
+        <article class="video">
+          <div class="video__thumb" aria-hidden="true"></div>
+          <p class="video__title">Strong Foundations: Testing, Deployment, and Persistence</p>
+          <p class="video__meta">01:45 | Development Process</p>
+          <p>How do development decisions ensure a stable product experience?</p>
+        </article>
+      </div>
+
+      <article class="article-teaser">
+        <p class="article-teaser__label">Technical Article</p>
+        <p class="article-teaser__title">
+          <a href="articles/mercury-refactor.html">Refactoring the Mercury Game: What Changed?</a>
+        </p>
+        <p>Placeholder teaser for a short technical writeup about the Mercury Game refactor.</p>
+      </article>
+    </section>
+
+    <section class="project" aria-labelledby="explorer-title">
+      <div class="project__heading">
+        <h2 id="explorer-title">Interactive AI Data Explorer</h2>
+        <p>React | TypeScript | Vite | Vercel AI SDK | OpenAI API | Strava API</p>
+      </div>
+
+      <div class="feature">
+        <div class="screenshot" role="img" aria-label="Interactive AI Data Explorer screenshot">
+          <img src="assets/ai_data_ss1.png" alt="Interactive AI Data Explorer interface">
+        </div>
+
+        <div class="feature__copy">
+          <p>
+            Data application that allows a user to explore activity data visually and through natural language with an
+            AI collaborator.
+          </p>
+          <p>
+            Designed with a shared analysis state for the visualization tools and the LLM, ensuring the conversations
+            are grounded in current selections.
+          </p>
+          <div class="actions" aria-label="Interactive AI Data Explorer project links">
+            <a href="https://ai-data-explorer-one.vercel.app/" target="_blank" rel="noreferrer">AI Data Explorer</a>
+            <a href="https://github.com/davidherring/ai-data-explorer.git" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="videos" aria-label="Interactive AI Data Explorer video entries">
+        <article class="video">
+          <div class="video__thumb" aria-hidden="true"></div>
+          <p class="video__title">Interactive AI Data Explorer: What and Why?</p>
+          <p class="video__meta">02:30 | Overview</p>
+          <p>What is the AI Data Explorer? Why was it built and who is it for?</p>
+        </article>
+
+        <article class="video">
+          <div class="video__thumb" aria-hidden="true"></div>
+          <p class="video__title">Deployed AI: Building with the Vercel AI SDK</p>
+          <p class="video__meta">01:50 | Walkthrough</p>
+          <p>Short video description placeholder for outputs and validation.</p>
+        </article>
+      </div>
+
+      <article class="article-teaser">
+        <p class="article-teaser__label">Technical Article</p>
+        <p class="article-teaser__title">
+          <a href="articles/ai-application-state.html">Making AI Useful: Grounding an LLM in Application State</a>
+        </p>
+        <p>Placeholder teaser for a short technical writeup about grounding AI interactions in application state.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 David Herring</p>
+  </footer>
+</body>
+
+</html>
