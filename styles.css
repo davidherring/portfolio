@@ -208,14 +208,15 @@ h2 {
   aspect-ratio: 16 / 9;
   background: var(--surface);
   border-radius: 3px;
-  display: grid;
   margin-bottom: 8px;
-  place-items: center;
+  overflow: hidden;
 }
 
-.video__thumb::after {
-  color: var(--text);
-  content: "Video thumbnail";
+.video__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video__title {
@@ -288,7 +289,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.article-body p + p {
+.article-body p+p {
   margin-top: 12px;
 }
 

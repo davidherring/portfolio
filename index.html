@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
 
+<!-- 
+ Welcome! Take a look around and feel free to reach out if you have any questions. 
+ I kept this portfolio site as simple as possible, mostly just vanilla HTML/CSS, so the
+ content would shine. The projects themselves demonstrate more complex stacks.
+-->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,20 +43,18 @@
         <div class="more" id="about-more" hidden>
           <p>
             The first time I wrote code that displayed a carousel of images next to a pin on a map, my focus shifted. I
-            took over a floundering computer science program at the college preparatory high school where I had been
-            teaching literature and rebuilt it into a successful program. And, when I wanted more, I moved to the
-            University of Arizona, to pursue a BS in Computer Science while working full time.
+            took over a floundering computer science program at the high school where I had been teaching literature and
+            rebuilt it into a successful program. And, when I wanted more, I moved to the University of Arizona to
+            pursue a BS in Computer Science while working full time.
           </p>
           <p>
             Returning to undergraduate studies after 20+ years leading classrooms has been a gift I had not expected at
-            this stage in my life. It has given me an opportunity to sink into deep technical ideas-operating systems,
-            networking, algorithms, and distributed programming-while experimenting with the AI tools that are rapidly
-            changing how software is written. And I love the challenge.
-          </p>
-          <p>
-            I've spent most of my career trying to answer the same question, first in a classroom and now in code: how
-            do you make something understandable without diminishing its complexity? What I've been after, in both jobs,
-            is the version that respects how complicated the thing actually is and still meets someone where they are.
+            this stage in my life. It has given me an opportunity to sink into deep technical ideas — operating systems,
+            networking, algorithms, and distributed programming — while experimenting with the AI tools that are rapidly
+            changing how software is created. I am interested in how we can build systems around these tools that take
+            advantage of what they do well while constraining what they don't. After decades spent trying to make
+            difficult ideas understandable without reducing their complexity, I'm equally interested in how we explain
+            those systems clearly. And I love the challenge.
           </p>
           <button class="text-button" type="button" aria-expanded="false" aria-controls="about-more"
             data-collapse-target="about-more">
@@ -73,7 +77,7 @@
 
         <div class="feature__copy">
           <p>
-            Negotiation simulation where a human plays alongside eight AI representatives for countries and NGOs debate
+            Negotiation simulation where one human and eight AIs act as country and NGO representatives to debate
             mercury pollution policies.
           </p>
           <p>
@@ -89,26 +93,30 @@
 
       <div class="videos" aria-label="Mercury Game video entries">
         <article class="video">
-          <div class="video__thumb" aria-hidden="true"></div>
-          <p class="video__title">The Mercury Game: What and Why?</p>
-          <p class="video__meta">02:30 | Overview</p>
-          <p>What is the Mercury Game? Why was it built and who is it for?</p>
+          <a class="video__link" href="https://youtu.be/d5JPK4INdOQ" target="_blank" rel="noreferrer">
+            <div class="video__thumb">
+              <img src="assets/mercury_game_ov_thumb.png" alt="Mercury Game overview video">
+            </div>
+            <p class="video__title">The Mercury Game: What and Why?</p>
+          </a>
+          <p class="video__meta">02:40 | Overview</p>
+          <p>A brief introduction to the Mercury Game, why I built it, and the experience it creates for the player.</p>
         </article>
-        <article class="video">
+        <!-- <article class="video">
           <div class="video__thumb" aria-hidden="true"></div>
           <p class="video__title">Strong Foundations: Testing, Deployment, and Persistence</p>
           <p class="video__meta">01:45 | Development Process</p>
           <p>How do development decisions ensure a stable product experience?</p>
-        </article>
+        </article> -->
       </div>
 
-      <article class="article-teaser">
+      <!-- <article class="article-teaser">
         <p class="article-teaser__label">Technical Article</p>
         <p class="article-teaser__title">
           <a href="articles/mercury-refactor.html">Refactoring the Mercury Game: What Changed?</a>
         </p>
         <p>Placeholder teaser for a short technical writeup about the Mercury Game refactor.</p>
-      </article>
+      </article> -->
     </section>
 
     <section class="project" aria-labelledby="explorer-title">
@@ -119,7 +127,7 @@
 
       <div class="feature">
         <div class="screenshot" role="img" aria-label="Interactive AI Data Explorer screenshot">
-          <img src="assets/ai_data_ss1.png" alt="Interactive AI Data Explorer interface">
+          <img src="assets/aide_ss1.png" alt="Interactive AI Data Explorer interface">
         </div>
 
         <div class="feature__copy">
@@ -128,7 +136,7 @@
             AI collaborator.
           </p>
           <p>
-            Designed with a shared analysis state for the visualization tools and the LLM, ensuring the conversations
+            Designed with a shared analysis state for the visualization tools and LLM, ensuring the conversations
             are grounded in current selections.
           </p>
           <div class="actions" aria-label="Interactive AI Data Explorer project links">
@@ -140,27 +148,31 @@
 
       <div class="videos" aria-label="Interactive AI Data Explorer video entries">
         <article class="video">
-          <div class="video__thumb" aria-hidden="true"></div>
-          <p class="video__title">Interactive AI Data Explorer: What and Why?</p>
-          <p class="video__meta">02:30 | Overview</p>
-          <p>What is the AI Data Explorer? Why was it built and who is it for?</p>
+          <a class="video__link" href="https://youtu.be/gXOsqOOeedo" target="_blank" rel="noreferrer">
+            <div class="video__thumb">
+              <img src="assets/aide_ov_thumb.png" alt="AI Data Explorer overview video">
+            </div>
+            <p class="video__title">Interactive AI Data Explorer: What and Why?</p>
+          </a>
+          <p class="video__meta">03:07 | Overview</p>
+          <p>A brief overview of the AI Data Explorer, why I built it, and how it integrates data visualization and
+            AI.</p>
         </article>
-
-        <article class="video">
+        <!-- <article class="video">
           <div class="video__thumb" aria-hidden="true"></div>
           <p class="video__title">Deployed AI: Building with the Vercel AI SDK</p>
           <p class="video__meta">01:50 | Walkthrough</p>
           <p>Short video description placeholder for outputs and validation.</p>
-        </article>
+        </article> -->
       </div>
 
-      <article class="article-teaser">
+      <!-- <article class="article-teaser">
         <p class="article-teaser__label">Technical Article</p>
         <p class="article-teaser__title">
           <a href="articles/ai-application-state.html">Making AI Useful: Grounding an LLM in Application State</a>
         </p>
         <p>Placeholder teaser for a short technical writeup about grounding AI interactions in application state.</p>
-      </article>
+      </article> -->
     </section>
   </main>
 
