@@ -278,6 +278,7 @@ h2 {
 }
 
 .article-deck {
+  font-style: italic;
   margin-top: 10px;
 }
 
@@ -291,6 +292,15 @@ h2 {
 
 .article-body p+p {
   margin-top: 12px;
+}
+
+.article-body ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.article-body li+li {
+  margin-top: 5px;
 }
 
 pre {
@@ -310,11 +320,15 @@ figure {
   margin: 16px 0 0;
 }
 
+.article-body figure+p {
+  margin-top: 16px;
+}
+
 .article-body img {
   border-radius: 3px;
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .article-image-placeholder {
@@ -326,7 +340,9 @@ figure {
 
 figcaption {
   font-size: 14px;
+  line-height: 1.4;
   margin-top: 8px;
+  opacity: 0.75;
 }
 
 @media (max-width: 760px) {
